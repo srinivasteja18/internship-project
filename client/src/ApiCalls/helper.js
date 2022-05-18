@@ -27,7 +27,6 @@ export const getAllAppointments = () => {
   return fetch("/api/appointments", {
     method: "GET",
     headers: {
-      Accept: "application/json",
       "Content-Type": "application/json",
     },
   })
