@@ -26,6 +26,10 @@ export const getAppointment = (appointmentId) => {
 export const getAllAppointments = () => {
   return fetch("/api/appointments", {
     method: "GET",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
   })
     .then((res) => {
       console.log(res);
