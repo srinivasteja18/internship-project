@@ -44,6 +44,6 @@ if (process.env.NODE_ENV === "production") {
 app.use("/api", appointmentRoutes);
 
 //server
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`App is running at ${port}`);
 });
