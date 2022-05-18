@@ -1,0 +1,26 @@
+{
+  "name": "iit_bhilai_project",
+  "version": "1.0.0",
+  "description": "MERN stack",
+  "main": "index.js",
+  "scripts": {
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
+    "client": "cd client && npm start",
+    "client:build": "cd client && npm run build",
+    "start": "nodemon index.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run start\""
+  },
+  "author": "srinivasteja18",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^7.2.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.13",
+    "nodemon": "^1.19.4",
+    "npm": "^6.14.15"
+  }
+}

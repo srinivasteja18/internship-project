@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+.btn,
+.jumbotron,
+.nav :hover {
+  border-radius: 0px;
+}
+#root {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+body {
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Base section common header and footer for the application */
+.main-page {
+  color: white;
+  min-height: 100vh;
+  background-image: linear-gradient(45deg, rgb(0, 0, 0), #0f4464);
+  padding: 1rem;
+  display: grid;
+  padding: 1rem 2rem 1rem 1rem;
+  /* width: fit-content; */
+  background-size: cover;
+  background-position: center;
+  align-content: space-between;
+}
+.base-section {
+  grid-area: "body";
+  display: flex;
+  padding: 1rem;
+  flex-flow: column;
+  min-height: 100%;
+}
+.middle-section {
+  display: flex;
+  flex: 0 1 auto;
+  justify-content: center;
+  align-items: center;
+  min-height: 65.5%;
+}
+.base-header {
+  grid-area: "header";
+  text-align: center;
+  color: white;
+}
+.base-header-title{
+  margin: .5rem;
+}
+.header{
+  border-bottom: 1px solid white;
+}
+.footer {
+  grid-area: "footer";
+  text-align: center;
+  color: white;
+  margin-top: 1rem;
+}
+.footer h4 {
+  margin: 1rem;
+}
+img {
+  max-width: 100%;
+}
+/* Navigation Bar */
+.header {
+  width: 100%;
+  padding: 0.2rem 0.5rem;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  align-items: center;
+}
+.nav-item {
+  margin: 0 0.5rem;
+}
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  font-size: 1rem;
+}
+.nav-helper h1 {
+  margin: 0 1rem;
+  font-family: "Rampart One";
+}
+.nav-helper {
+  display: flex;
+  justify-content: space-between;
+}
+.home-container{
+  display: flex;
+  justify-content: space-around;
+}
+.home-anim-div{
+  /* padding: 5rem; */
+  /* width:400px;
+  height: 400px; */
+  width: 45%;
+  
+}
+.home-anim-div-update{
+  width:40%;
+}
+.lottie-anim{
+  background: transparent;
+}
+.home-container h1{
+  font-size: 4rem;
+}
+.home-container h3{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.create-container{
+  width: 100%;
+  display:flex;
+  justify-content: space-around;
+}
+
+.home-div{
+  text-align: center;
+  margin-top: 2rem;
+}
+.button{
+  padding:.5rem 1rem;
+  color: white;
+  background-color: hsl(198, 70%, 13%);
+  border-radius: 10px;
+}
+.link-button{
+  padding:.5rem 1rem;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: hsl(198, 81%, 18%);
+  cursor: pointer;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* create appointment */
+.container{
+  padding: 1rem;
+  margin: 1rem;
+}
+.Appointment-form{
+  padding: 1rem;
+  background-color: aqua;
+}
+
+/* form designs */
+
+.Appointment-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Appointment-container h2 {
+  color: rgb(214, 214, 214);
+  font-weight: 200;
+  margin: 1rem;
+  text-align: center;
+}
+.Appointment-card {
+  padding: 1.3rem;
+  background-color: #0f5161;
+  border-radius: 5px;
+  color: black;
+  border: 1px solid rgb(61, 60, 60);
+}
+.Appointment-form {
+  display: block;
+}
+
+.Appointment-helper {
+  margin: 0.5rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Appointment-labels {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  text-align: left;
+  margin-right: 1rem;
+}
+.Appointment-inputs {
+  border-radius: 5px;
+  color: rgb(230, 230, 230);
+  padding: 0.3rem 2rem;
+  background-color: hsl(198, 70%, 13%);
+  margin: 0.3rem 0;
+  border: 1px solid #3a3d42;
+  font-size: 0.9rem;
+  font-weight: 200;
+  /* float: right; */
+}
+.Appointment-icons {
+  position: absolute;
+  left: 8px;
+  bottom: 13px;
+  color: rgb(175, 174, 174);
+  font-size: 0.8rem;
+}
+.title {
+  color: #1f6feb;
+  text-decoration: none;
+}
+.Appointment-button {
+  margin: 0 0.55rem;
+  width: 93%;
+  border-radius: 5px;
+  padding: 0.4rem 1rem;
+  background-color: #94bbcc;
+  cursor: pointer;
+  border: 0;
+  font-weight: 700;
+  color: rgb(8, 37, 50);
+  font-size: 0.9rem;
+}
+
+.Appointment-text {
+  margin: 2rem 0;
+  border: 1px solid #474747;
+  padding: 1rem;
+  border-radius: 5px;
+  color: rgb(185, 185, 185);
+  text-align: center;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+.Appointment-span {
+  color: #1f6feb;
+  cursor: pointer;
+}
+
+/* my Appointments */
+.appointments-section{
+  margin: 1rem auto;
+  padding: .7em;
+  /* background-color: #afd4eb; */
+  /* display: inline-block; */
+}
+.appointments-container{
+  background-color: #166b81;
+  padding: 1rem;
+  /* display: flex; */
+  margin: 1rem auto;
+}
+.appointments-container h3{
+  text-align: center;
+  margin: .5;
+  color:black;
+}
+.appointments-card{
+  display: flex;
+}
+.text-span{
+  margin-right: .5rem;
+  color: rgb(6, 19, 30);
+  font-weight: 500;
+}
+.text{
+  color: #daeffc;
+  font-weight: 500;
+  margin: .5rem;
+}
+.appointment-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 1.5rem;
+}
+.appointment-p{
+  font-size: 2rem;
+}
