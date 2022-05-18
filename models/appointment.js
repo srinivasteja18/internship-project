@@ -16,7 +16,6 @@ const appointmentSchema = Schema(
       type: String,
       required: true,
       trim: true,
-      unique: true,
     },
     date: {
       type: Date,
