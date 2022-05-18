@@ -24,7 +24,7 @@ export const getAppointment = (appointmentId) => {
 };
 
 export const getAllAppointments = () => {
-  return fetch(`/api/appointments`, {
+  return fetch("/api/appointments", {
     method: "GET",
   })
     .then((res) => {

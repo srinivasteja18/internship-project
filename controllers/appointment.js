@@ -41,8 +41,9 @@ exports.getAllAppointments = (req, res) => {
       return res.status(400).json({
         error: "No appointments found",
       });
+    } else {
+      res.json(appointments);
     }
-    res.json(appointments);
   });
 };
 

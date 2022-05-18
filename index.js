@@ -29,7 +29,7 @@ mongoose
     console.log("ERROR", err);
   });
 
-const port = 7000;
+const port = 8080;
 //Accessing React files in production
 if (process.env.NODE_ENV === "production") {
   //Set static folder
