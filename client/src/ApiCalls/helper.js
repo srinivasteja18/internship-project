@@ -1,7 +1,5 @@
-import { API } from ".././backend";
-
 export const createAppointment = (data) => {
-  return fetch(`${API}appointment/create`, {
+  return fetch(`/api/appointment/create`, {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -16,7 +14,7 @@ export const createAppointment = (data) => {
 };
 
 export const getAppointment = (appointmentId) => {
-  return fetch(`${API}appointment/${appointmentId}`, {
+  return fetch(`/api/appointment/${appointmentId}`, {
     method: "GET",
   })
     .then((res) => {
@@ -26,7 +24,7 @@ export const getAppointment = (appointmentId) => {
 };
 
 export const getAllAppointments = () => {
-  return fetch(`${API}appointments`, {
+  return fetch(`/api/appointments`, {
     method: "GET",
   })
     .then((res) => {
@@ -37,7 +35,7 @@ export const getAllAppointments = () => {
 };
 
 export const updateAppointment = (appointmentId, data) => {
-  return fetch(`${API}appointment/update/${appointmentId}`, {
+  return fetch(`/api/appointment/update/${appointmentId}`, {
     method: "PUT",
     headers: {
       Accept: "application/json",
@@ -52,7 +50,7 @@ export const updateAppointment = (appointmentId, data) => {
 };
 
 export const deleteAppointment = (appointmentId) => {
-  return fetch(`${API}appointment/delete/${appointmentId}`, {
+  return fetch(`/api/appointment/delete/${appointmentId}`, {
     method: "DELETE",
     headers: {
       Accept: "application/json",

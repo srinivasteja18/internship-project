@@ -84,7 +84,7 @@ const MyAppointments = () => {
                   onClick={() => deletethisAppointment(appointment._id)}
                   className="button"
                 >
-                  Cancel
+                  Cancel Appointment
                 </button>
               </div>
             </div>
