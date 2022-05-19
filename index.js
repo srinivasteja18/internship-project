@@ -30,6 +30,9 @@ mongoose
   });
 
 const port = 8080;
+//Routes
+app.use("/api", appointmentRoutes);
+
 //Accessing React files in production
 if (process.env.NODE_ENV === "production") {
   //Set static folder
@@ -39,9 +42,6 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
-
-//Routes
-app.use("/api", appointmentRoutes);
 
 //server
 app.listen(process.env.PORT || port, () => {
