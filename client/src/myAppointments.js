@@ -46,7 +46,7 @@ const MyAppointments = () => {
 
   const allAppointments = () => (
     <div className="appointments-section">
-      {appointments &&
+      {appointments && appointments.length ? (
         appointments.map((appointment, index) => (
           <div key={index} className="appointments-container">
             <h3>Appointment No: {index + 1}</h3>
@@ -89,7 +89,10 @@ const MyAppointments = () => {
               </div>
             </div>
           </div>
-        ))}
+        ))
+      ) : (
+        <h1>No Appointments Scheduled</h1>
+      )}
       <div className="home-div">
         <Link to="/" className="link-button">
           Back

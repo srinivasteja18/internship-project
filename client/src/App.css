@@ -138,6 +138,7 @@ img {
   color: white;
   background-color: hsl(198, 70%, 13%);
   border-radius: 10px;
+  cursor: pointer;
 }
 .link-button{
   padding:.5rem 1rem;

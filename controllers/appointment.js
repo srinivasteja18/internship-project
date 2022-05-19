@@ -65,7 +65,7 @@ exports.updateAppointment = (req, res) => {
 
 exports.removeAppointment = (req, res) => {
   const appointment = req.appointment;
-  Appointment.remove((err, appointment) => {
+  appointment.remove((err, appointment) => {
     if (err) {
       return res.status(400).json({
         error: "Failed to delete this appointment",
